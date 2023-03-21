@@ -1,0 +1,304 @@
+@import 'components/reset.scss';
+@import 'components/general.scss';
+@import 'components/variable.scss';
+@import 'components/extends.scss';
+@import 'components/mixins.scss';
+
+.header {
+    &__body {
+        margin-top: 37px;
+        margin-bottom: 139px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 161px;
+    }
+
+    &__button {
+        @include default-font('Work Sans', 600);
+        font-size: 18px;
+        line-height: 21px;
+        @include button($accent, $background-button, 1px solid #ffce4e);
+        width: 195px;
+        height: 64px;
+    }
+}
+
+.hero {
+    position: relative;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text-content {
+        padding-top: 32px;
+    }
+
+    &__title {
+        @include title(85px, $primary);
+        margin-top: 0;
+        margin-bottom: 77px;
+    }
+
+    &__highlight {
+        @include title(85px, $accent);
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 48px;
+        margin-bottom: 121px;
+    }
+
+    &__button {
+        &-yellow {
+            @include button($black, $accent, none);
+            @extend %button-l;
+            width: 257px;
+            height: 84px;
+        }
+
+        &-default {
+            @include button($white, $background-button, 1px solid #ffce4e);
+            @extend %button-l;
+            width: 257px;
+            height: 84px;
+        }
+    }
+
+    &__arrow-btn {
+        display: block;
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+
+        background: rgba(109, 91, 114, 0.4);
+        box-shadow: 0px 14px 79px rgba(134, 19, 165, 0.1);
+        backdrop-filter: blur(20px);
+
+        height: 100px;
+        width: 100px;
+        border: none;
+        border-radius: 50%;
+
+        cursor: pointer;
+    }
+
+    &__arrow-icon {
+        width: 25px;
+    }
+}
+
+.statistic {
+    display: flex;
+    align-items: center;
+    gap: 103px;
+    margin-bottom: 195px;
+
+    &__number {
+        font-family: 'Oxanium';
+        font-weight: 700;
+        font-size: 62px;
+        line-height: 78px;
+        color: $primary;
+        margin-bottom: 1px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: $gray;
+        text-align: center;
+    }
+}
+.image-block {
+    background: url(../images/hero.jpg);
+    width: 100%;
+    max-width: 558px;
+    height: 720px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__header {
+        max-width: 512px;
+        width: 78%;
+        margin: 24px auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 39px;
+        background: linear-gradient(
+            92.8deg,
+            rgba(255, 137, 61, 0.09) -52.37%,
+            rgba(250, 250, 250, 0.9) 137.41%
+        );
+        opacity: 0.95;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+        backdrop-filter: blur(22.5px);
+    }
+
+    &__item {
+        &-left {
+        }
+
+        &-right {
+        }
+    }
+
+    &__pre-title {
+        margin: 0;
+        margin-bottom: 7px;
+
+        font-family: 'Oxanium';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.08em;
+
+        color: $light-gray;
+    }
+
+    &__title {
+        font-family: 'Oxanium';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+
+        color: $white;
+    }
+
+    &__right {
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $white;
+
+        padding: 33px 39px 35px 60px;
+    }
+
+    &__name {
+        margin: 0;
+        font-family: 'Oxanium';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 35px;
+
+        letter-spacing: 0.07em;
+
+        color: $navy-blue;
+    }
+
+    &__link {
+        margin: 0;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+
+        color: $light-purple;
+    }
+
+    &__button {
+        @include button($black, $accent, none);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+
+        width: 205px;
+        height: 72px;
+
+        backdrop-filter: blur(22.5px);
+    }
+}
+
+.clients {
+    &__list {
+        margin: 0 auto;
+        max-width: 1257px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 132px;
+
+        margin-bottom: 188px;
+    }
+
+    &__item {
+        flex-basis: 20%;
+    }
+}
+
+.auctions {
+    &__slide {
+        width: 495px;
+        height: 691px;
+        background-color: $purple2;
+        padding: 32px 32px 28px;
+        display: flex;
+    }
+
+    &__image {
+        position: relative;
+        width: 431px;
+        height: 359px;
+
+        img {
+            object-fit: cover;
+        }
+
+        margin-bottom: 28px;
+    }
+
+    &__time {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 35px;
+        letter-spacing: 0.02em;
+        padding: 16px 46px;
+        background: linear-gradient(
+            125.33deg,
+            #8613a5 18.61%,
+            rgba(250, 250, 250, 0.65) 137.4%
+        );
+        opacity: 0.95;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+        backdrop-filter: blur(22.5px);
+    }
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.swiper {
+    &-slide {
+        flex-shrink: 1;
+    }
+}

@@ -1,0 +1,28 @@
+@import 'variable';
+
+%center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%title {
+    font-family: 'Oxanium';
+    font-weight: 700;
+    line-height: 130px;
+}
+
+%button-l {
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+
+    color: $black;
+}
+
+%circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NFT | Marketplace Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./icons/logo.ico" type="image/x-icon" />
+        <!-- fonts -->
+        <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+        <!-- swiper -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+        <!-- style -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <img class="header__logo" src="icons/logo.svg" alt="logo" />
+
+                    <div class="header__nav">
+                        <ul class="header__menu menu">
+                            <li class="menu__item menu__item-active">
+                                <a href="#" class="menu__link">Explore</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Creators</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Community</a>
+                            </li>
+                        </ul>
+
+                        <button class="header__button button">
+                            Connect Wallet
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__text-content">
+                        <h1 class="hero__title">
+                            Explore, Buy and Sell the
+                            <span class="hero__highlight"
+                                >Best <br />
+                                NFTs!</span
+                            >
+                        </h1>
+                        <div class="hero__buttons">
+                            <button class="hero__button hero__button-yellow">
+                                Explore
+                            </button>
+                            <button class="hero__button hero__button-default">
+                                Create
+                            </button>
+                        </div>
+                        <div class="hero__statistic statistic">
+                            <div class="statistic__item">
+                                <div class="statistic__number">32k+</div>
+                                <p class="statistic__description">Artworks</p>
+                            </div>
+                            <div class="statistic__item">
+                                <div class="statistic__number">20k+</div>
+                                <p class="statistic__description">Auctions</p>
+                            </div>
+                            <div class="statistic__item">
+                                <div class="statistic__number">12k+</div>
+                                <p class="statistic__description">Creators</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__image image-block">
+                        <div class="image-block__header">
+                            <div
+                                class="image-block__item image-block__item-left"
+                            >
+                                <p class="image-block__pre-title">
+                                    Current bid
+                                </p>
+                                <div class="image-block__title">0.99 ETH</div>
+                            </div>
+                            <div
+                                class="image-block__item image-block__item-right"
+                            >
+                                <p class="image-block__pre-title">Ends in</p>
+                                <div class="image-block__title">25 hrs</div>
+                            </div>
+                        </div>
+                        <div class="image-block__footer">
+                            <div class="image-block-artist">
+                                <p class="image-block__name">Artist</p>
+                                <p class="image-block__link">&#64;wzard</p>
+                            </div>
+                            <button class="image-block__button">
+                                Start Bid
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="hero__arrow-btn">
+                    <img
+                        class="hero__arrow-icon"
+                        src="icons/arrow-down.svg"
+                        alt="arrow-down"
+                    />
+                </button>
+            </section>
+
+            <section class="clients">
+                <div class="container">
+                    <div class="clients__list">
+                        <img
+                            class="clients__item"
+                            src="icons/coinbase.svg"
+                            alt="coinbase"
+                        />
+                        <img
+                            class="clients__item"
+                            src="icons/blockchain.svg"
+                            alt="blockchain"
+                        />
+                        <img
+                            class="clients__item"
+                            src="icons/binance.svg"
+                            alt="binance"
+                        />
+                        <img
+                            class="clients__item"
+                            src="icons/bitmex.svg"
+                            alt="bitmex"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section class="auctions">
+                <div class="container">
+                    <div class="auctions__body">
+                        <div class="auctions__title title">
+                            <h2 class="title__text">
+                                <span class="title__circle">Live Auctions</span>
+                            </h2>
+                        </div>
+
+                        <div class="swiper auctions__slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide auctions__slide">
+                                    <div class="auctions__item">
+                                        <div class="auctions__image">
+                                            <img
+                                                src="images/auction-3.png"
+                                                alt="auction-1"
+                                            />
+                                            <div class="auctions__time">
+                                                03:18:24
+                                            </div>
+                                        </div>
+                                        <div class="auctions__profile profile">
+                                            <img
+                                                class="profile__avatar"
+                                                src="images/avatar.png"
+                                                alt="avatar__user"
+                                            />
+                                            <div class="profile__info">
+                                                <div class="profile__deta">
+                                                    <p class="profile__name">
+                                                        Virtual Art
+                                                    </p>
+                                                    <p class="profile__link">
+                                                        by @wzard
+                                                    </p>
+                                                </div>
+                                                <div class="profile__like">
+                                                    <img
+                                                        class="profile__heart"
+                                                        src="icons/heart.svg"
+                                                        alt="heart"
+                                                    />
+                                                    <span
+                                                        class="profile__number"
+                                                        >92</span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide auctions__slide">
+                                    <div class="auctions__item">
+                                        <div class="auctions__image">
+                                            <img
+                                                src="images/auction-3.png"
+                                                alt="auction-1"
+                                            />
+                                            <div class="auctions__time">
+                                                03:18:24
+                                            </div>
+                                        </div>
+                                        <div class="auctions__profile profile">
+                                            <img
+                                                class="profile__avatar"
+                                                src="images/avatar.png"
+                                                alt="avatar__user"
+                                            />
+                                            <div class="profile__info">
+                                                <div class="profile__deta">
+                                                    <p class="profile__name">
+                                                        Virtual Art
+                                                    </p>
+                                                    <p class="profile__link">
+                                                        by @wzard
+                                                    </p>
+                                                </div>
+                                                <div class="profile__like">
+                                                    <img
+                                                        class="profile__heart"
+                                                        src="icons/heart.svg"
+                                                        alt="heart"
+                                                    />
+                                                    <span
+                                                        class="profile__number"
+                                                        >92</span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide auctions__slide">
+                                    <div class="auctions__item">
+                                        <div class="auctions__image">
+                                            <img
+                                                src="images/auction-3.png"
+                                                alt="auction-1"
+                                            />
+                                            <div class="auctions__time">
+                                                03:18:24
+                                            </div>
+                                        </div>
+                                        <div class="auctions__profile profile">
+                                            <img
+                                                class="profile__avatar"
+                                                src="images/avatar.png"
+                                                alt="avatar__user"
+                                            />
+                                            <div class="profile__info">
+                                                <div class="profile__deta">
+                                                    <p class="profile__name">
+                                                        Virtual Art
+                                                    </p>
+                                                    <p class="profile__link">
+                                                        by @wzard
+                                                    </p>
+                                                </div>
+                                                <div class="profile__like">
+                                                    <img
+                                                        class="profile__heart"
+                                                        src="icons/heart.svg"
+                                                        alt="heart"
+                                                    />
+                                                    <span
+                                                        class="profile__number"
+                                                        >92</span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

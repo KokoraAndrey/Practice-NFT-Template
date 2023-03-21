@@ -1,0 +1,30 @@
+@import 'variable.scss';
+@import 'extends.scss';
+
+@mixin default-font($font-family, $font-weight) {
+    font-family: $font-family, sans-serif;
+    font-weight: $font-weight;
+}
+
+@mixin button($color, $background-button, $border) {
+    @extend %center;
+    width: 257px;
+    height: 84px;
+
+    color: $color;
+    background-color: $background-button;
+
+    border: $border;
+    cursor: pointer;
+}
+
+@mixin title($font-size, $color) {
+    @extend %title;
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin circle($background-color) {
+    @extend %circle;
+    background-color: $background-color;
+}

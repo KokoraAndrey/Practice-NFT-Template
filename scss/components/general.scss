@@ -1,0 +1,90 @@
+@import 'variable';
+@import 'mixins';
+
+body {
+    @include default-font('Work Sans', 400);
+    box-sizing: border-box;
+    background-color: $background-primary;
+    color: $primary;
+}
+
+h1 {
+    font-family: 'Oxanium';
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 130px;
+
+    color: #f5fbf2;
+}
+
+.container {
+    max-width: 1390px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    gap: 64px;
+    &__item {
+        list-style-type: none;
+        position: relative;
+
+        &-active {
+            color: $accent;
+            ::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: $accent;
+                right: 0;
+                top: 28px;
+            }
+        }
+
+        :hover {
+            color: $accent;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        transition: all 0.3s;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+
+    &__text {
+        @include title(64px, $primary);
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) translateX(-36%);
+            background-color: $purple;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+        }
+    }
+
+    &__circle {
+        text-align: center;
+        position: relative;
+    }
+}
