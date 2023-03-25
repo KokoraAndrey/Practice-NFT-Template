@@ -245,6 +245,11 @@
 }
 
 .auctions {
+    overflow: hidden;
+    &__title {
+        margin-bottom: 42px;
+    }
+
     &__slide {
         width: 495px;
         height: 691px;
@@ -284,21 +289,118 @@
         box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
         backdrop-filter: blur(22.5px);
     }
+
+    &__bid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 40px;
+    }
+
+    &__pre-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: $purple5;
+        margin: 0;
+    }
+
+    &__number {
+        @include default-font('Oxanium', 700);
+        font-size: 24px;
+        line-height: 35px;
+
+        color: $primary;
+        margin: 0;
+    }
+
+    &__button {
+        @include button($white, $background-button, 1px solid #fde8b3);
+        @extend %button-l;
+        width: 100%;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        transition: background-color 0.2s ease-in-out;
+        text-transform: capitalize;
+
+        &:hover {
+            background-color: rgba(122, 113, 88, 0.1);
+        }
+    }
 }
 
 .profile {
     display: flex;
     align-items: center;
+    margin-bottom: 28px;
 
     &__info {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        gap: 136px;
+    }
+
+    &__avatar {
+        margin-right: 16px;
+        border-radius: 50%;
+    }
+
+    &__name {
+        @include default-font('Work Sans', 500);
+        font-size: 28px;
+        line-height: 35px;
+
+        color: $primary;
+        margin: 0 0 8px 0;
+    }
+
+    &__link {
+        font-size: 20px;
+        color: $purple3;
+        margin: 0;
+    }
+
+    &__like {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__number {
+        font-size: 32px;
+        line-height: 35px;
+        color: $purple4;
+    }
+
+    &__heart {
+        width: 28px;
     }
 }
 
 .swiper {
+    padding-top: 100px !important;
+    overflow: visible !important;
+
     &-slide {
         flex-shrink: 1;
+    }
+
+    &-button-prev,
+    &-button-next {
+        width: 54px;
+        height: 54px;
+        top: 24px;
+        right: 90%;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &-button-next {
+        transform: rotate(180deg);
     }
 }

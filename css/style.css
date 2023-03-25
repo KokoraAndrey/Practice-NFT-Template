@@ -1,4 +1,4 @@
-.image-block__button, .hero__button-default, .hero__button-yellow, .header__button {
+.auctions__button, .image-block__button, .hero__button-default, .hero__button-yellow, .header__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,7 +10,7 @@
   line-height: 130px;
 }
 
-.hero__button-default, .hero__button-yellow {
+.auctions__button, .hero__button-default, .hero__button-yellow {
   font-family: "Work Sans";
   font-weight: 600;
   font-size: 28px;
@@ -100,7 +100,7 @@ h1 {
   position: relative;
 }
 
-.image-block__button, .hero__button-default, .hero__button-yellow, .header__button {
+.auctions__button, .image-block__button, .hero__button-default, .hero__button-yellow, .header__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,7 +112,7 @@ h1 {
   line-height: 130px;
 }
 
-.hero__button-default, .hero__button-yellow {
+.auctions__button, .hero__button-default, .hero__button-yellow {
   font-family: "Work Sans";
   font-weight: 600;
   font-size: 28px;
@@ -120,7 +120,7 @@ h1 {
   color: #000;
 }
 
-.image-block__button, .hero__button-default, .hero__button-yellow, .header__button {
+.auctions__button, .image-block__button, .hero__button-default, .hero__button-yellow, .header__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,7 +132,7 @@ h1 {
   line-height: 130px;
 }
 
-.hero__button-default, .hero__button-yellow {
+.auctions__button, .hero__button-default, .hero__button-yellow {
   font-family: "Work Sans";
   font-weight: 600;
   font-size: 28px;
@@ -345,6 +345,12 @@ h1 {
   flex-basis: 20%;
 }
 
+.auctions {
+  overflow: hidden;
+}
+.auctions__title {
+  margin-bottom: 42px;
+}
 .auctions__slide {
   width: 495px;
   height: 691px;
@@ -375,19 +381,105 @@ h1 {
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
   backdrop-filter: blur(22.5px);
 }
+.auctions__bid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.auctions__pre-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #c6bfc8;
+  margin: 0;
+}
+.auctions__number {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: #f5fbf2;
+  margin: 0;
+}
+.auctions__button {
+  width: 257px;
+  height: 84px;
+  color: #fff;
+  background-color: rgba(233, 215, 167, 0.1);
+  border: 1px solid #fde8b3;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s ease-in-out;
+  text-transform: capitalize;
+}
+.auctions__button:hover {
+  background-color: rgba(122, 113, 88, 0.1);
+}
 
 .profile {
   display: flex;
   align-items: center;
+  margin-bottom: 28px;
 }
 .profile__info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 136px;
+}
+.profile__avatar {
+  margin-right: 16px;
+  border-radius: 50%;
+}
+.profile__name {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 35px;
+  color: #f5fbf2;
+  margin: 0 0 8px 0;
+}
+.profile__link {
+  font-size: 20px;
+  color: #bdaac1;
+  margin: 0;
+}
+.profile__like {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.profile__number {
+  font-size: 32px;
+  line-height: 35px;
+  color: #76607a;
+}
+.profile__heart {
+  width: 28px;
 }
 
+.swiper {
+  padding-top: 100px !important;
+  overflow: visible !important;
+}
 .swiper-slide {
   flex-shrink: 1;
+}
+.swiper-button-prev, .swiper-button-next {
+  width: 54px;
+  height: 54px;
+  top: 24px;
+  right: 90%;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+  display: none;
+}
+.swiper-button-next {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=style.css.map */
