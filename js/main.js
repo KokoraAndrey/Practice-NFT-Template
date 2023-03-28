@@ -9,3 +9,15 @@ const swiper = new Swiper('.auctions__slider', {
     freeMode: true,
     spaceBetween: 42,
 });
+
+const swiper2 = new Swiper('.popular__slider', {
+    navigation: {
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2', // Включить стрелочки
+    },
+    slidesPerView: 2.3,
+    autoHeight: true,
+    grabCursor: true,
+    freeMode: true,
+    spaceBetween: 36,
+});

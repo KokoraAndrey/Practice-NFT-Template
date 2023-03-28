@@ -245,6 +245,7 @@
 }
 
 .auctions {
+    @include title-circle($purple);
     overflow: hidden;
     background: linear-gradient(
         336.61deg,
@@ -498,4 +499,88 @@
         line-height: 28px;
         margin: 0;
     }
+}
+
+.popular {
+    @include title-circle($circle-popular);
+    overflow: hidden;
+
+    &__title {
+        margin-bottom: 106px;
+    }
+
+    &__block {
+        position: relative;
+        padding-top: 100px !important;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: calc(100% - 100px);
+            background: linear-gradient(
+                to left,
+                rgba(#000, 0.7),
+                rgba(#000, 0)
+            );
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            z-index: 2;
+        }
+    }
+
+    &__item {
+        background-color: $purple2;
+        display: inline-block;
+        padding: 39px;
+    }
+
+    &__image {
+        position: relative;
+        max-height: 270px;
+
+        img {
+            object-fit: cover;
+        }
+
+        margin-bottom: 24px;
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+
+        img {
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+        gap: 154px;
+    }
+
+    &__link {
+        @include text('Work Sans', 32px, 500, $primary);
+        margin: 0;
+    }
+
+    &__code {
+        @include text('Work Sans', 20px, 600, $gray2);
+        margin: 0;
+    }
+
+    &__slider {
+        padding: 0 !important;
+    }
+}
+
+.swiper-button-prev2,
+.swiper-button-next2 {
+    top: 24px;
 }
