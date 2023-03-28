@@ -1,16 +1,16 @@
-.auctions__button, .image-block__button, .hero__button-default, .hero__button-yellow, .header__button {
+.auctions__submit, .auctions__button, .image-block__button, .hero__button-default, .hero__button-yellow, .header__button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero__highlight, .hero__title, .title__text {
+.works__title, .hero__highlight, .hero__title, .title__text {
   font-family: "Oxanium";
   font-weight: 700;
   line-height: 130px;
 }
 
-.auctions__button, .hero__button-default, .hero__button-yellow {
+.auctions__submit, .auctions__button, .hero__button-default, .hero__button-yellow {
   font-family: "Work Sans";
   font-weight: 600;
   font-size: 28px;
@@ -100,19 +100,19 @@ h1 {
   position: relative;
 }
 
-.auctions__button, .image-block__button, .hero__button-default, .hero__button-yellow, .header__button {
+.auctions__submit, .auctions__button, .image-block__button, .hero__button-default, .hero__button-yellow, .header__button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero__highlight, .hero__title, .title__text {
+.works__title, .hero__highlight, .hero__title, .title__text {
   font-family: "Oxanium";
   font-weight: 700;
   line-height: 130px;
 }
 
-.auctions__button, .hero__button-default, .hero__button-yellow {
+.auctions__submit, .auctions__button, .hero__button-default, .hero__button-yellow {
   font-family: "Work Sans";
   font-weight: 600;
   font-size: 28px;
@@ -120,19 +120,19 @@ h1 {
   color: #000;
 }
 
-.auctions__button, .image-block__button, .hero__button-default, .hero__button-yellow, .header__button {
+.auctions__submit, .auctions__button, .image-block__button, .hero__button-default, .hero__button-yellow, .header__button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero__highlight, .hero__title, .title__text {
+.works__title, .hero__highlight, .hero__title, .title__text {
   font-family: "Oxanium";
   font-weight: 700;
   line-height: 130px;
 }
 
-.auctions__button, .hero__button-default, .hero__button-yellow {
+.auctions__submit, .auctions__button, .hero__button-default, .hero__button-yellow {
   font-family: "Work Sans";
   font-weight: 600;
   font-size: 28px;
@@ -347,9 +347,13 @@ h1 {
 
 .auctions {
   overflow: hidden;
+  background: linear-gradient(336.61deg, #251928 16.25%, rgba(37, 25, 40, 0) 91.6%);
 }
 .auctions__title {
   margin-bottom: 42px;
+}
+.auctions__slider {
+  margin-bottom: 84px;
 }
 .auctions__slide {
   width: 495px;
@@ -413,11 +417,27 @@ h1 {
   font-weight: 500;
   font-size: 24px;
   line-height: 35px;
-  letter-spacing: 0.05em;
   transition: background-color 0.2s ease-in-out;
   text-transform: capitalize;
 }
 .auctions__button:hover {
+  background-color: rgba(122, 113, 88, 0.1);
+}
+.auctions__submit {
+  width: 257px;
+  height: 84px;
+  color: #fff;
+  background-color: rgba(233, 215, 167, 0.1);
+  border: 1px solid #fde8b3;
+  cursor: pointer;
+  padding: 24px 65px;
+  margin: 0 auto 80px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  transition: background-color 0.2s ease-in-out;
+}
+.auctions__submit:hover {
   background-color: rgba(122, 113, 88, 0.1);
 }
 
@@ -460,6 +480,7 @@ h1 {
 }
 .profile__heart {
   width: 28px;
+  cursor: pointer;
 }
 
 .swiper {
@@ -480,6 +501,63 @@ h1 {
 }
 .swiper-button-next {
   transform: rotate(180deg);
+}
+
+.works__wrapper {
+  padding: 189px 0 159px 0;
+}
+.works__title {
+  font-size: 64px;
+  color: #f5fbf2;
+  text-align: center;
+}
+.works__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+.works__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.works__item:last-child .works__icon::before {
+  display: none;
+}
+.works__icon {
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  background-color: #372839;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.works__iconimg {
+  width: 80%;
+}
+.works__icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -50%;
+  transform: translateY(-50%) translateX(100%);
+  background: url(../icons/dashed__line.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 165px;
+  height: 10px;
+}
+.works__text {
+  font-family: "Work Sans";
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffce4e;
+  line-height: 28px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
