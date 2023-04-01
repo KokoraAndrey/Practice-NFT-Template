@@ -357,55 +357,6 @@
     }
 }
 
-.profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 28px;
-
-    &__info {
-        display: flex;
-        align-items: center;
-        gap: 136px;
-    }
-
-    &__avatar {
-        margin-right: 16px;
-        border-radius: 50%;
-    }
-
-    &__name {
-        @include default-font('Work Sans', 500);
-        font-size: 28px;
-        line-height: 35px;
-
-        color: $primary;
-        margin: 0 0 8px 0;
-    }
-
-    &__link {
-        font-size: 20px;
-        color: $purple3;
-        margin: 0;
-    }
-
-    &__like {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
-
-    &__number {
-        font-size: 32px;
-        line-height: 35px;
-        color: $purple4;
-    }
-
-    &__heart {
-        width: 28px;
-        cursor: pointer;
-    }
-}
-
 .swiper {
     padding-top: 100px !important;
     overflow: visible !important;
@@ -505,10 +456,6 @@
     @include title-circle($circle-popular);
     overflow: hidden;
 
-    &__title {
-        margin-bottom: 106px;
-    }
-
     &__block {
         position: relative;
         padding-top: 100px !important;
@@ -578,9 +525,285 @@
     &__slider {
         padding: 0 !important;
     }
+
+    &__submit {
+        @include button($white, $background-button, 1px solid #fde8b3);
+        @extend %button-l;
+        padding: 24px 65px;
+        margin: 84px auto 104px;
+
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35px;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: rgba(122, 113, 88, 0.1);
+        }
+    }
 }
 
 .swiper-button-prev2,
 .swiper-button-next2 {
-    top: 24px;
+    top: -55px;
+}
+
+.categories {
+    @include title-circle($purple);
+    background-color: $purple7;
+    overflow: hidden;
+
+    &__body {
+        padding: 80px 0 80px 0;
+    }
+
+    &__slider {
+        margin-bottom: 84px;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 32px 32px 28px;
+
+        background-color: $purple2;
+    }
+
+    &__image {
+        margin-bottom: 16px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $opacity-image;
+            opacity: 0;
+
+            transition: all 0.3s;
+        }
+
+        &:hover {
+            &:after {
+                opacity: 1;
+            }
+
+            button {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+
+        button {
+            background: #ffce4e;
+            backdrop-filter: blur(45px);
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            opacity: 0;
+            pointer-events: none;
+            color: #000000;
+            padding: 21px 58px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            white-space: nowrap;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #e0b548;
+            }
+        }
+
+        &img {
+            width: 80%;
+        }
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    &__avatar {
+        width: 58px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 92px;
+    }
+
+    &__name {
+        @include default-font('Work Sans', 600);
+        font-size: 24px;
+        line-height: 35px;
+
+        color: #f5fbf2;
+        margin: 0 0 8px 0;
+    }
+
+    &__link {
+        font-size: 18px;
+        color: $purple3;
+        margin: 0;
+    }
+
+    &__like {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__heart {
+        width: 24px;
+        cursor: pointer;
+    }
+
+    &__number {
+        font-size: 24px;
+        line-height: 35px;
+        color: $purple4;
+    }
+
+    &__bid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__pre-title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 35px;
+        color: $purple5;
+        margin: 0;
+    }
+
+    &__price {
+        @include default-font('Oxanium', 700);
+        font-size: 20px;
+        line-height: 35px;
+
+        color: $primary;
+        margin: 0;
+    }
+
+    &__submit {
+        @include button($white, $background-button, 1px solid #fde8b3);
+        @extend %button-l;
+        padding: 24px 65px;
+        margin: 0px auto 0px;
+
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35px;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: rgba(122, 113, 88, 0.1);
+        }
+    }
+}
+
+.creators {
+    @include title-circle($circle-popular);
+    &__body {
+        padding: 104px 0 80px;
+    }
+
+    &__title {
+        margin-bottom: 80px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 56px 72px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 28px 30px;
+        background: #302034;
+        box-shadow: inset 2px 0px 0px #e03054;
+        margin-bottom: 80px;
+
+        img {
+            display: block;
+            width: 104px;
+            height: 104px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 24px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__name {
+        @include text('Oxanium', 32px, 600, $primary);
+        margin: 0 0 8px 0;
+    }
+
+    &__price {
+        @include text('Work Sans', 24px, 500, $purple3);
+    }
+
+    &__items {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -45px;
+            transform: translateY(-50%);
+            height: 100%;
+            width: 3px;
+            background: #49374e;
+        }
+    }
+
+    &__number {
+        @include text('Oxanium', 32px, 700, $primary);
+        margin: 0 0 6px 0;
+    }
+
+    &__description {
+        @include text('Work Sans', 24px, 500, $purple8);
+    }
+
+    &__submit {
+        @include button($white, $background-button, 1px solid #fde8b3);
+        @extend %button-l;
+        padding: 24px 65px;
+        margin: 0px auto 0px;
+
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35px;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: rgba(122, 113, 88, 0.1);
+        }
+    }
 }

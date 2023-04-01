@@ -21,3 +21,11 @@ const swiper2 = new Swiper('.popular__slider', {
     freeMode: true,
     spaceBetween: 36,
 });
+
+const swiper3 = new Swiper('.categories__slider', {
+    slidesPerView: 3,
+    autoHeight: true,
+    grabCursor: true,
+    freeMode: true,
+    spaceBetween: 36,
+});

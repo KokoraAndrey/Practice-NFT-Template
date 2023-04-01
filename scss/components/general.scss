@@ -60,4 +60,53 @@ h1 {
     }
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
 
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 136px;
+    }
+
+    &__avatar {
+        margin-right: 16px;
+        border-radius: 50%;
+    }
+
+    &__name {
+        @include default-font('Work Sans', 500);
+        font-size: 28px;
+        line-height: 35px;
+
+        color: $primary;
+        margin: 0 0 8px 0;
+    }
+
+    &__link {
+        font-size: 20px;
+        color: $purple3;
+        margin: 0;
+    }
+
+    &__like {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__number {
+        font-size: 32px;
+        line-height: 35px;
+        color: $purple4;
+    }
+
+    &__heart {
+        width: 28px;
+        cursor: pointer;
+    }
+
+    
+}
