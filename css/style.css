@@ -33,6 +33,12 @@ h1 {
   line-height: 130px;
   color: #f5fbf2;
 }
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 50px;
+    line-height: 150%;
+  }
+}
 
 .container {
   max-width: 1390px;
@@ -206,9 +212,21 @@ h1 {
   margin-top: 0;
   margin-bottom: 77px;
 }
+@media (max-width: 1100px) {
+  .hero__title {
+    font-size: 50px;
+    line-height: 150%;
+  }
+}
 .hero__highlight {
   font-size: 85px;
   color: #ffce4e;
+}
+@media (max-width: 1100px) {
+  .hero__highlight {
+    font-size: 50px;
+    line-height: 150%;
+  }
 }
 .hero__buttons {
   display: flex;
@@ -229,6 +247,12 @@ h1 {
 .hero__button-yellow:hover {
   background-color: #c99c20;
 }
+@media (max-width: 1100px) {
+  .hero__button-yellow {
+    width: 200px;
+    height: 64px;
+  }
+}
 .hero__button-default {
   width: 257px;
   height: 84px;
@@ -245,6 +269,12 @@ h1 {
   -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 206, 78, 0.35);
   -moz-box-shadow: 0px 0px 15px 5px rgba(255, 206, 78, 0.35);
   box-shadow: 0px 0px 15px 5px rgba(255, 206, 78, 0.35);
+}
+@media (max-width: 1100px) {
+  .hero__button-default {
+    width: 200px;
+    height: 64px;
+  }
 }
 .hero__arrow-btn {
   display: block;
@@ -300,6 +330,11 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 1280px) {
+  .image-block {
+    margin-left: 20px;
+  }
 }
 .image-block__header {
   max-width: 512px;
