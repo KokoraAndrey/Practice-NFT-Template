@@ -29,23 +29,25 @@ h1 {
     &__item {
         list-style-type: none;
         position: relative;
+        transition: all 0.5s;
 
-        &-active {
-            color: $accent;
-            ::before {
-                content: '';
-                display: block;
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                background-color: $accent;
-                right: 0;
-                top: 28px;
-            }
+        ::before {
+            content: '';
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $accent;
+            right: 0;
+            top: 28px;
         }
 
         :hover {
             color: $accent;
+
+            &::before {
+                display: block;
+            }
         }
     }
 
@@ -107,6 +109,4 @@ h1 {
         width: 28px;
         cursor: pointer;
     }
-
-    
 }

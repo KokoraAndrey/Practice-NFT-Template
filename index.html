@@ -18,10 +18,12 @@
         <link rel="stylesheet" href="css/swiper-bundle.min.css" />
         <!-- style -->
         <link rel="stylesheet" href="css/style.css" />
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <body>
-        <header class="header">
+        <header class="header" data-aos="slide-down">
             <div class="container">
                 <div class="header__body">
                     <img class="header__logo" src="icons/logo.svg" alt="logo" />
@@ -51,14 +53,14 @@
             <section class="hero">
                 <div class="container">
                     <div class="hero__text-content">
-                        <h1 class="hero__title">
+                        <h1 class="hero__title" data-aos="fade-right">
                             Explore, Buy and Sell the
                             <span class="hero__highlight"
                                 >Best <br />
                                 NFTs!</span
                             >
                         </h1>
-                        <div class="hero__buttons">
+                        <div class="hero__buttons" data-aos="fade-right">
                             <button class="hero__button hero__button-yellow">
                                 Explore
                             </button>
@@ -66,7 +68,10 @@
                                 Create
                             </button>
                         </div>
-                        <div class="hero__statistic statistic">
+                        <div
+                            class="hero__statistic statistic"
+                            data-aos="fade-right"
+                        >
                             <div class="statistic__item">
                                 <div class="statistic__number">32k+</div>
                                 <p class="statistic__description">Artworks</p>
@@ -82,7 +87,7 @@
                         </div>
                     </div>
 
-                    <div class="hero__image image-block">
+                    <div class="hero__image image-block" data-aos="fade-up">
                         <div class="image-block__header">
                             <div
                                 class="image-block__item image-block__item-left"
@@ -110,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="hero__arrow-btn">
+                <button class="hero__arrow-btn" data-aos="fade-down">
                     <img
                         class="hero__arrow-icon"
                         src="icons/arrow-down.svg"
@@ -119,7 +124,7 @@
                 </button>
             </section>
 
-            <section class="clients">
+            <section class="clients" data-aos="zoom-in-down">
                 <div class="container">
                     <div class="clients__list">
                         <img
@@ -150,7 +155,7 @@
                 <div class="container">
                     <div class="auctions__body">
                         <div class="auctions__title">
-                            <h2 class="auctions__text">
+                            <h2 class="auctions__text" data-aos="fade-right">
                                 <span class="auctions__circle"
                                     >Live Auctions</span
                                 >
@@ -493,14 +498,18 @@
                     </div>
                 </div>
 
-                <button class="auctions__submit">View All</button>
+                <button class="auctions__submit" data-aos="fade-right">
+                    View All
+                </button>
             </section>
 
             <section class="works">
                 <div class="container">
                     <div class="works__wrapper">
-                        <h3 class="works__title">How it works</h3>
-                        <div class="works__items">
+                        <h3 class="works__title" data-aos="fade-right">
+                            How it works
+                        </h3>
+                        <div class="works__items" data-aos="zoom-in-down">
                             <div class="works__item">
                                 <div class="works__icon">
                                     <img
@@ -541,7 +550,7 @@
             <section class="popular">
                 <div class="container">
                     <div class="popular__title">
-                        <h2 class="popular__text">
+                        <h2 class="popular__text" data-aos="fade-left">
                             <span class="popular__circle"
                                 >Popular Collections</span
                             >
@@ -756,14 +765,16 @@
                         </div>
                     </div>
                 </div>
-                <button class="popular__submit">View All</button>
+                <button class="popular__submit" data-aos="fade-left">
+                    View All
+                </button>
             </section>
 
             <section class="categories">
                 <div class="container">
                     <div class="categories__body">
                         <div class="categories__title">
-                            <h2 class="categories__text">
+                            <h2 class="categories__text" data-aos="fade-right">
                                 <span class="categories__circle"
                                     >Explore By Categories</span
                                 >
@@ -1157,7 +1168,12 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="categories__submit">View All</button>
+                        <button
+                            class="categories__submit"
+                            data-aos="fade-right"
+                        >
+                            View All
+                        </button>
                     </div>
                 </div>
             </section>
@@ -1166,14 +1182,14 @@
                 <div class="container">
                     <div class="creators__body">
                         <div class="creators__title">
-                            <h2 class="creators__text">
+                            <h2 class="creators__text" data-aos="fade-left">
                                 <span class="creators__circle"
                                     >Top Creators</span
                                 >
                             </h2>
                         </div>
 
-                        <div class="creators__list">
+                        <div class="creators__list" data-aos="zoom-in-up">
                             <div class="creators__item">
                                 <div class="creators__wrapper">
                                     <img
@@ -1247,7 +1263,9 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="creators__submit">View All</button>
+                        <button class="creators__submit" data-aos="fade-right">
+                            View All
+                        </button>
                     </div>
                 </div>
             </section>
@@ -1255,11 +1273,11 @@
             <section class="subscribe">
                 <div class="container">
                     <div class="subscribe__wrapper">
-                        <h2 class="subscribe__title">
+                        <h2 class="subscribe__title" data-aos="zoom-in-down">
                             Ready for Next NFT Drop?
                         </h2>
 
-                        <div class="subscribe__form">
+                        <div class="subscribe__form" data-aos="zoom-in-down">
                             <input
                                 class="subscribe__input"
                                 type="email"
@@ -1358,7 +1376,7 @@
                             <a class="footer__link" href="#">NFT Blog</a>
                             <a class="footer__link" href="#">Activity</a>
                         </div>
-                        
+
                         <div class="footer__support">
                             <h3 class="footer__title">Support</h3>
                             <a class="footer__link" href="#"
@@ -1374,6 +1392,7 @@
         </main>
 
         <script src="js/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
