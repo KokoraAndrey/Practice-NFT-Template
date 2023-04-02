@@ -731,6 +731,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-gap: 56px 72px;
+        margin-bottom: 80px;
     }
 
     &__item {
@@ -741,7 +742,6 @@
         padding: 28px 30px;
         background: #302034;
         box-shadow: inset 2px 0px 0px #e03054;
-        margin-bottom: 80px;
 
         img {
             display: block;
@@ -795,7 +795,7 @@
         @include button($white, $background-button, 1px solid #fde8b3);
         @extend %button-l;
         padding: 24px 65px;
-        margin: 0px auto 0px;
+        margin: 0px auto 80px;
 
         font-size: 30px;
         font-weight: 400;
@@ -805,5 +805,131 @@
         &:hover {
             background-color: rgba(122, 113, 88, 0.1);
         }
+    }
+}
+
+.subscribe {
+    background: url('../images/ready_block.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px 0;
+
+    &__title {
+        @include text('Oxanium', 64px, 700, $primary);
+        line-height: 130px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    &__form {
+        border: 1px solid $border-subscribe;
+        justify-content: space-between;
+        display: flex;
+        width: 680px;
+        margin: 0 auto;
+    }
+
+    &__input {
+        @include text('Work Sans', 24px, 400, $primary);
+        padding: 30px 53px;
+        background: none;
+        outline: none;
+        line-height: 35px;
+        flex-grow: 1;
+
+        &::placeholder {
+            color: $text-input;
+        }
+    }
+
+    &__button {
+        @include text('Work Sans', 24px, 700, $purple7);
+        display: block;
+        min-height: 100%;
+        width: 244px;
+        line-height: 35px;
+        background-color: $border-subscribe;
+        border: none;
+        cursor: pointer;
+
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $hover-subscribe-btn;
+        }
+    }
+}
+
+.footer {
+    background-color: $purple7;
+    padding: 108px 0 115px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__article {
+        @include text('Work Sans', 20px, 500, $purple9);
+        line-height: 36px;
+        max-width: 390px;
+        margin-top: 8px;
+    }
+
+    &__logo {
+        width: 194px;
+        height: 194px;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        margin: 52px 0;
+
+        a:hover {
+            path {
+                fill: $hover-social;
+            }
+        }
+
+        svg {
+            width: 35px;
+            height: 35px;
+
+            path {
+                transition: all 0.3s;
+            }
+        }
+    }
+
+    &__copy {
+        @include text('Work Sans', 20px, 400, $purple9);
+        line-height: 36px;
+    }
+
+    &__about {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    &__support {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    &__title {
+        @include text('Work Sans', 24px, 700, $primary);
+        margin-top: 0;
+    }
+
+    &__link {
+        @include text('Work Sans', 20px, 400, $purple9);
+        text-decoration: none;
+        line-height: 50.5px;
     }
 }
