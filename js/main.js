@@ -1,3 +1,9 @@
+const burger = document.querySelector('.burger');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+});
+
 const swiper = new Swiper('.auctions__slider', {
     navigation: {
         nextEl: '.swiper-button-next1',
