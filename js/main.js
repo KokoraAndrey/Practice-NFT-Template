@@ -9,11 +9,17 @@ const swiper = new Swiper('.auctions__slider', {
         nextEl: '.swiper-button-next1',
         prevEl: '.swiper-button-prev1', // Включить стрелочки
     },
-    slidesPerView: 2.8,
+    slidesPerView: 2,
     autoHeight: true,
     grabCursor: true,
     freeMode: true,
     spaceBetween: 42,
+    breakpoints: {
+        1300: {
+            navigation: 0,
+            slidesPerView: 2.8,
+        },
+    },
 });
 
 const swiper2 = new Swiper('.popular__slider', {

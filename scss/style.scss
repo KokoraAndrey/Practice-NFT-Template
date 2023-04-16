@@ -386,19 +386,30 @@
 
 .clients {
     &__list {
-        margin: 0 auto;
-        max-width: 1257px;
+        // margin: 0 auto;
+        // max-width: 1257px;
 
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 132px;
+        flex-wrap: wrap;
+        grid-gap: 49px 52px;
 
         margin-bottom: 188px;
+
+        @media (max-width: 850px) {
+            justify-content: center;
+            margin-bottom: 96px;
+        }
     }
 
     &__item {
-        flex-basis: 20%;
+        width: 20%;
+
+        @media (max-width: 850px) {
+            justify-content: center;
+            width: 33%;
+        }
     }
 }
 
@@ -534,6 +545,10 @@
         right: 90%;
 
         &::after {
+            display: none;
+        }
+
+        @media (max-width: 1248px) {
             display: none;
         }
     }
