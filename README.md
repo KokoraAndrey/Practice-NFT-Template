@@ -1,5 +1,5 @@
 # Практика верситки проекта NFT
-Готовая верстка https://kokoraandrey.github.io/nft/
+Готовая верстка https://kokoraandrey.github.io/Practice-NFT-Template/
 ## В проекте используются:
 * HTML
 * CSS (SCSS)
